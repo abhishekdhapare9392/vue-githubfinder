@@ -69,7 +69,7 @@ export default {
     async getDetails() {
       const searchText = this.search.trim();
       let res = await axios.get(
-        `https://api.github.com/search/users?q=${searchText}&client_id=9a632cb16e2e3def018a&client_secret=12e9c732822166db4732e062a8cd67504767ee46`
+        `https://api.github.com/search/users?q=${searchText}&client_id=<your-client-id>&client_secret=<your-client-secret>`
       );
       // let data = res.json();
       console.log(res.data.items);
